@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icons" href="{% static 'images/favicon.ico' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <style type="text/css">
+        .pc { cursor: pointer; }
+        .text-cus{ color: #c4d4e3 !important; }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Merienda&display=swap" rel="stylesheet">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body class="bg-dark text-cus">
+    <div class="container user-select-none">
+        <div class="row">
+            <div class="col-md col-sm">
+                <div class="jumbotron mt-4" style="font-family: 'Merienda', cursive;"">
+                    <h1 class="display-2 mb-4">
+                        Welome
+                    </h1>
+                    <p class="lead m-0 p-0">{{quote}}</p>
+                    <p class="text-light small mt-1 p-0">{{author}}</p>
+                    <hr class="my-3">
+                    <p style="font-family: 'Kalam', cursive; font-size: 18px;">
+                        This website is made using the <span class="text-warning">Python</span> Backend Framework <span class="text-success">Django</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="font-family: 'Kalam', cursive;">
+            <div class="col-md col-sm">
+                <p>
+                    Check Out The <span class="pc"><a href="login" class="btn-link">Login</a></span> and
+                    <span class="pc"><a href="register" class="btn-link">Registration</a></span> Interface
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
